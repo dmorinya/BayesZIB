@@ -1,0 +1,9 @@
+exportPattern("^[[:alpha:]]+")
+
+import(Rcpp)
+import(methods)
+importFrom(rstan,sampling)
+importFrom("stats", "model.matrix", "model.response", "terms",
+             "update")
+importFrom("stats", "quantile", "runif", "sd")
+useDynLib(bayesZIB, .registration = TRUE)
